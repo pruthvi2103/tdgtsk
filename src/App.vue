@@ -14,14 +14,15 @@
     >
       <v-list-item class="px-2">
         <v-list-item-avatar>
-          <v-icon>mdi-account-box</v-icon>
+          <v-icon
+          >mdi-account-box</v-icon>
         </v-list-item-avatar>
 
         <v-list-item-title>John Doe</v-list-item-title>
 
         <v-btn
           icon
-          @click.stop="mini = !mini"
+          @click.stop="primaryDrawer.model = !primaryDrawer.model"
         >
           <v-icon>mdi-chevron-left</v-icon>
         </v-btn>
@@ -82,7 +83,8 @@
           align="center"
           justify="center"
         >
-          <v-col cols="8">
+          <v-col md="8"
+          sm="10">
             <PostBody :posts="posts"></PostBody>
           </v-col>
         </v-row>

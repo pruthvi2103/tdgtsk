@@ -10,13 +10,7 @@
           </v-skeleton-loader>
           </v-card>
 
-             <v-card
-            v-else
-          >
-            <v-card-title>Title</v-card-title>
-            <v-card-text>Card Text</v-card-text>
-          </v-card>
-
+      
     </div>
 </template>
 

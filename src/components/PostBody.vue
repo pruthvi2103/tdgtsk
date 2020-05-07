@@ -6,7 +6,7 @@
           :key="i"
           cols="12"
           >
-    
+    <v-lazy>
         <v-card
             
           >
@@ -30,6 +30,7 @@
               </div>
             </div>
           </v-card>
+          </v-lazy>
 
         
       </v-col>
@@ -72,8 +73,9 @@ import Paginator from './Paginator';
             //console.log(this.postdisp);
         },
         onNewPage(pg){
-            this.page=pg;
-            this.start = (pg-1)*10;
+         setTimeout(() => {this.page=pg;this.start = (pg-1)*10;}, 1500);
+            
+            
 
 
         },
