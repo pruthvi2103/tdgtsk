@@ -75,6 +75,29 @@
         @click.stop="primaryDrawer.model = !primaryDrawer.model"
       />
       <v-toolbar-title>TDG-Partner</v-toolbar-title>
+      <v-divider
+      class="mx-12 hidden-sm-and-down"
+      style="padding-left:30px"
+      vertical
+    ></v-divider>
+    <span class="hidden-sm-and-down">
+      Home</span>
+       <v-spacer></v-spacer>
+  <v-toolbar-items class="hidden-sm-and-down">
+    <v-divider vertical></v-divider>
+      <v-btn text>
+        Sign-In
+      </v-btn>
+
+      <v-divider vertical></v-divider>
+
+      <v-btn text>
+        Sign-Up
+      </v-btn>
+
+      
+
+</v-toolbar-items>
     </v-app-bar>
 
     <v-content>
@@ -85,6 +108,7 @@
         >
           <v-col md="8"
           sm="10">
+          <v-divider vertical></v-divider>
             <PostBody :posts="posts"></PostBody>
           </v-col>
         </v-row>
@@ -132,3 +156,8 @@ import axios from 'axios'
     }
   }
 </script>
+
+<style lang="scss">
+
+
+</style>
