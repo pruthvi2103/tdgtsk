@@ -10,7 +10,11 @@
           cols="12"
           style="padding-bottom:10px">
           
-    <v-lazy>
+    <v-lazy
+     v-model="post.isActive" :options="{
+                                threshold: .5
+                            }"
+                            class="fill-height">
       
         <v-card
           color="anchor"  
